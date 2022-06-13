@@ -1,10 +1,13 @@
-
 import './App.css';
-import List from './List';
+import Photo from './Photo';
+import Photos from './Photos';
 
 function App() {
   return (
-    <List />
+    <p>
+      <Photo />
+      <Photos />
+    </p>
   );
 }
 
