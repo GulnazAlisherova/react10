@@ -1,8 +1,6 @@
 function ListItem({title, completed}) {
   return ( 
-    <>
     <li>{title}</li>
-    </>
    );
 }
 

@@ -5,17 +5,16 @@ import ListItem from "./ListItem";
 function List() {
   const [items, setItems] = useState([]);
 
-  useEffect(function(){
+  useEffect(function () {
     axios.get('https://jsonplaceholder.typicode.com/todos')
-    .then(({data}) => setItems(data));
-  })
-  return ( 
-    <>
+      .then(({ data }) => setItems(data));
+  }, []); //https://jsonplaceholder.typicode.com/
+
+  return (
     <ul>
       {items.map(item => <ListItem {...item} />)}
     </ul>
-    </>
-   );
+  );
 }
 
 export default List;
