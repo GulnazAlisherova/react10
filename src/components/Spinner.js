@@ -1,7 +1,9 @@
+import "./Spinner.css";
+
 function Spinner() {
-  return (  
-    <div></div>
+  return (
+    <div className="Spinner"></div>
   );
 }
 
-export default Spinner;
+export default Spinner; 
